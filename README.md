@@ -5,7 +5,7 @@ App is running on Google Cloud servers under this link: https://pig-game-node.ap
 ### Build with
 * [Node.js](https://nodejs.org/en/)
 * [Express](https://expressjs.com/)
-<bt />
+<br />
 NPM Plugins:
 * [express-handlebars](https://www.npmjs.com/package/express-handlebars)
 * [express-validator](https://express-validator.github.io/docs/)
