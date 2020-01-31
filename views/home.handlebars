@@ -1,0 +1,37 @@
+<!-- Home page -->
+<div class="wrapper clearfix games-history">
+    <div class="top-bar">
+        <h1>Pig Game</h1>
+        <img class="img" src="/public/img/icon.png">
+    </div>
+    <div class="home">
+        <form action="/play" method="POST">
+            <div class="error">{{error}}</div>
+            <div class="form-group">
+                <label>Name of first player: </label>
+                <input type="text" class="form-control form-custom {{class}}" name="playerOneName" id="playerOneName"
+                    value="{{playerOneName}}">
+            </div>
+            <div class="form-group">
+                <label>Name of second player: </label>
+                <input type="text" class="form-control form-custom {{class}}" name="playerTwoName" id="playerTwoName"
+                    value="{{playerTwoName}}">
+            </div>
+            <div class="form-group">
+                <label>Winning score: </label>
+                <input type="number" class="form-control form-custom {{class}}" name="winningScore" id="winningScore"
+                    value="{{winningScore}}">
+            </div>
+            <button type="submit"><i></i>Enter Game</button>
+        </form>
+        <form action="/games" method="GET">
+            <button class="btn-homeToGames"><i></i>Top scores</button>
+        </form>
+        <form action="/about" method="GET">
+            <button class="btn-about"><i></i>About</button>
+        </form>
+    </div>
+    <p><b>Node.js Pig Game, Copyright &copy; 2020 Szymon Hrehorowicz</b></p>
+</div>
+
+<script src="/public/js/home.js"></script>

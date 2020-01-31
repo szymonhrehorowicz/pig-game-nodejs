@@ -1,0 +1,38 @@
+<!-- Game -->
+<div class="wrapper clearfix">
+    <div id="input-field">
+        <h2>Winning score:</h2>
+        <input id="score-input" type="text" value='{{winningScore}}' disabled>
+    </div>
+    <div class="player-0-panel active">
+        <div class="player-name" id="name-0">{{playerOneName}}</div>
+        <div class="player-score" id="score-0">43</div>
+        <div class="player-current-box">
+            <div class="player-current-label">Current</div>
+            <div class="player-current-score" id="current-0">11</div>
+        </div>
+    </div>
+
+    <div class="player-1-panel">
+        <div class="player-name" id="name-1">{{playerTwoName}}</div>
+        <div class="player-score" id="score-1">72</div>
+        <div class="player-current-box">
+            <div class="player-current-label">Current</div>
+            <div class="player-current-score" id="current-1">0</div>
+        </div>
+    </div>
+
+    <button class="btn-new"><i></i>New game</button>
+    <form action="/games" method="GET">
+        <button class="btn-games" type="submit"><i></i>Top scores</button>
+    </form>
+    <button class="btn-roll"><i></i>Roll dice</button>
+    <button class="btn-hold"><i></i>Hold</button>
+    <form action="/" method="GET">
+        <button class="btn-back" type="submit"><i></i>Back</button>
+    </form>
+
+    <img src="/public/img/dice-5.png" alt="Dice" class="dice">
+</div>
+
+<script src="/public/js/game.js"></script>
